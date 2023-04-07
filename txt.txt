@@ -1,0 +1,32 @@
+or create a new repository on the command line
+echo "# ABC" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/saritaharihar/ABC.git
+git push -u -f origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/saritaharihar/ABC.git
+git branch -M main
+git push -u origin main
+
+
+https://github.com/saritaharihar/ABC.git
+
+# create a new branch
+git branch new-branch
+# change environment to the new branch
+git checkout new-branch
+# create a change
+touch new-file.js
+# commit the change
+git add .
+git commit -m "add new file"
+# push to a new branch
+git push --set-upstream origin new-branch
+
+Changing remote repo
+git remote set-url origin https://github.com/saritaharihar/ExampleRepo.git
